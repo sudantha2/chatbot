@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: sinhala-ai-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: your_telegram_token_here
+      - key: OPENAI_API_KEY
+        value: your_openai_api_key_here
